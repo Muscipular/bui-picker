@@ -4,7 +4,8 @@
  */
 
 
-var List = require('bui-list'),
+var $ = require('jquery'),
+  List = require('bui-list'),
   Picker = require('./picker'),
   /**
    * 列表选择器,xclass = 'list-picker'

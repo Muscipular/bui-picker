@@ -4,7 +4,8 @@
  */
 
   
-var Overlay = require('bui-overlay').Overlay,
+var $ = require('jquery'),
+  Overlay = require('bui-overlay').Overlay,
   Mixin = require('./mixin');
 
 /**

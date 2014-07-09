@@ -7,7 +7,7 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/buiteam/picker.git"
+    "url": "git://github.com/buiteam/bui-picker.git"
   },
   "bugs": {
     "url": ""
@@ -16,12 +16,14 @@
   "spm": {
     "main": "index.js",
     "dependencies": {
+      "jquery": "1.9.1",
       "bui-common": "1.1.0",
       "bui-list": "1.1.0",
       "bui-overlay": "1.1.0"
     },
     "devDependencies": {
-      "expect.js": "0.3.1"
+      "expect.js": "0.3.1",
+      "sinon": "1.6.0"
     },
     "engines": {
       "seajs": "2.2.1"

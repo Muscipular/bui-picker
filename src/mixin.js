@@ -3,6 +3,8 @@
  * @ignore
  */
 
+var $ = require('jquery');
+
 /**
  * @class BUI.Picker.Mixin
  */
