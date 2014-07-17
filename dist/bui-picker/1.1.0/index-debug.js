@@ -1,4 +1,4 @@
-define("bui-picker/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-picker/1.1.0/src/mixin-debug", "bui-picker/1.1.0/src/picker-debug", "bui-picker/1.1.0/src/listpicker-debug", "bui-overlay/1.1.0/index-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-picker/1.1.0/index-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-picker/1.1.0/src/mixin-debug", "bui-picker/1.1.0/src/picker-debug", "bui-picker/1.1.0/src/listpicker-debug", "bui-overlay/1.1.0/index-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview Picker的入口
    * @author dxq613@gmail.com
@@ -13,12 +13,12 @@ define("bui-picker/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-common
   });
   module.exports = Picker;
 });
-define("bui-picker/1.1.0/src/mixin-debug", ["jquery/1.9.1/jquery-debug"], function(require, exports, module) {
+define("bui-picker/1.1.0/src/mixin-debug", ["jquery"], function(require, exports, module) {
   /**
    * @fileOverview picker的扩展
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug");
+  var $ = require("jquery");
   /**
    * @class BUI.Picker.Mixin
    */
@@ -268,12 +268,12 @@ define("bui-picker/1.1.0/src/mixin-debug", ["jquery/1.9.1/jquery-debug"], functi
   }
   module.exports = Mixin;
 });
-define("bui-picker/1.1.0/src/picker-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-overlay/1.1.0/index-debug", "bui-picker/1.1.0/src/mixin-debug"], function(require, exports, module) {
+define("bui-picker/1.1.0/src/picker-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-overlay/1.1.0/index-debug", "bui-picker/1.1.0/src/mixin-debug"], function(require, exports, module) {
   /**
    * @fileOverview 选择器
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     Overlay = require("bui-overlay/1.1.0/index-debug").Overlay,
     Mixin = require("bui-picker/1.1.0/src/mixin-debug");
   /**
@@ -312,12 +312,12 @@ define("bui-picker/1.1.0/src/picker-debug", ["jquery/1.9.1/jquery-debug", "bui-c
   });
   module.exports = picker;
 });
-define("bui-picker/1.1.0/src/listpicker-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-picker/1.1.0/src/picker-debug", "bui-overlay/1.1.0/index-debug", "bui-picker/1.1.0/src/mixin-debug"], function(require, exports, module) {
+define("bui-picker/1.1.0/src/listpicker-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-picker/1.1.0/src/picker-debug", "bui-overlay/1.1.0/index-debug", "bui-picker/1.1.0/src/mixin-debug"], function(require, exports, module) {
   /**
    * @fileOverview 列表项的选择器
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     List = require("bui-list/1.1.0/index-debug"),
     Picker = require("bui-picker/1.1.0/src/picker-debug"),
     /**
