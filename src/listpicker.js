@@ -49,7 +49,7 @@ var $ = require('jquery'),
      * @param {String} val 设置值
      */
     setSelectedValue : function(val){
-      val = val ? val.toString() : '';
+      val = val !== void 0 && val !== null ? val.toString() : '';
       if(!this.get('isInit')){
         this._initControl();
       }
